@@ -14,6 +14,7 @@
 <body>
 
 <div class="noise-overlay" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
@@ -52,36 +53,79 @@
     </div>
 
     <div class="wrap hero-inner">
-      <p class="eyebrow reveal">
-        <span class="eyebrow-dot"></span>
-        Brand Activation Agency — Abuja, Nigeria
-      </p>
+      <div class="hero-copy">
+        <p class="eyebrow reveal">
+          <span class="eyebrow-dot"></span>
+          Brand Activation Agency — Abuja, Nigeria
+        </p>
 
-      <h1 class="hero-title reveal">
-        Your brand deserves<br>
-        more than a <span class="strike">scroll-past</span>.
-        <span class="hero-title-accent">We make sure it doesn't get one.</span>
-      </h1>
+        <h1 class="hero-title reveal">
+          Your brand deserves<br>
+          more than a <span class="strike"><span class="strike-text">scroll-past</span></span>.
+          <span class="hero-title-accent">We make sure it doesn't get one.</span>
+        </h1>
 
-      <p class="hero-sub reveal">
-        SBG Concept is a full-service brand activation company. We get you out of the
-        feed and into real rooms, real markets and real conversations across Nigeria —
-        then turn that attention into customers who actually stick around.
-      </p>
+        <p class="hero-sub reveal">
+          SBG Concept is a full-service brand activation company. We get you out of the
+          feed and into real rooms, real markets and real conversations across Nigeria —
+          then turn that attention into customers who actually stick around.
+        </p>
 
-      <div class="hero-cta reveal">
-        <a href="#contact" class="btn btn-primary">Start a Campaign</a>
-        <a href="#services" class="btn btn-ghost">
-          See what we do
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+        <div class="hero-cta reveal">
+          <a href="#contact" class="btn btn-primary btn-magnetic">Start a Campaign</a>
+          <a href="#services" class="btn btn-ghost">
+            See what we do
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <ul class="hero-facts reveal">
+          <li>8 service lines</li>
+          <li>Abuja-based, Nigeria-wide</li>
+          <li>On ground. On point. On results.</li>
+        </ul>
       </div>
 
-      <ul class="hero-facts reveal">
-        <li>8 service lines</li>
-        <li>Abuja-based, Nigeria-wide</li>
-        <li>On ground. On point. On results.</li>
-      </ul>
+      <div class="hero-visual reveal" id="heroVisual" aria-hidden="true">
+        <div class="hv-stage">
+          <span class="hv-ring r1"></span>
+          <span class="hv-ring r2"></span>
+          <span class="hv-ring r3"></span>
+
+          <svg class="hv-megaphone" viewBox="0 0 120 120" fill="none">
+            <path class="hv-mega-body" d="M30 52v16a4 4 0 004 4h6l24 16V32L40 48h-6a4 4 0 00-4 4z" fill="#071A3D"/>
+            <path class="hv-wave hv-wave1" d="M70 44c5 4 5 24 0 32" stroke="#F2A900" stroke-width="4" stroke-linecap="round"/>
+            <path class="hv-wave hv-wave2" d="M80 36c9 8 9 40 0 48" stroke="#F2A900" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+            <circle class="hv-mega-dot" cx="26" cy="60" r="3.5" fill="#F2A900"/>
+          </svg>
+
+          <svg class="hv-spark spark-a" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z" fill="#FFC107"/></svg>
+          <svg class="hv-spark spark-b" viewBox="0 0 24 24" fill="none"><path d="M4 18l6-7 4 4 6-9" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+          <span class="hv-particle p1"></span>
+          <span class="hv-particle p2"></span>
+          <span class="hv-particle p3"></span>
+          <span class="hv-particle p4"></span>
+          <span class="hv-particle p5"></span>
+        </div>
+
+        <div class="hv-badge badge-1">
+          <span class="hv-badge-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="14" cy="7" r="3.2" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M3 20c0-3.6 2.7-6 6-6M11 20c0-4.4 3.2-7.5 7.2-7.5S25 15.6 25 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <span>Customer Engagement</span>
+        </div>
+
+        <div class="hv-badge badge-2">
+          <span class="hv-badge-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M11 20V6M18 20v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span>Market Activations</span>
+        </div>
+
+        <div class="hv-badge badge-3">
+          <span class="hv-badge-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <span>Lead Generation</span>
+        </div>
+
+        <div class="hv-tag">Ideas. Visibility. Results.</div>
+      </div>
     </div>
 
     <div class="marquee" aria-hidden="true">
