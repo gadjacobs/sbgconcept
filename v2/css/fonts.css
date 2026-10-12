@@ -1,0 +1,53 @@
+/* Anybody (variable: weight 100–900, width 50–150) — display */
+@font-face{
+  font-family: "Anybody";
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 50% 150%;
+  font-display: swap;
+  src: url(../assets/fonts/anybody-var.woff2) format("woff2");
+}
+/* Onest — body */
+@font-face{
+  font-family: "Onest";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/onest-400-normal.woff2) format("woff2");
+}
+@font-face{
+  font-family: "Onest";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../assets/fonts/onest-500-normal.woff2) format("woff2");
+}
+@font-face{
+  font-family: "Onest";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../assets/fonts/onest-600-normal.woff2) format("woff2");
+}
+@font-face{
+  font-family: "Onest";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../assets/fonts/onest-700-normal.woff2) format("woff2");
+}
+/* DM Mono — field-note labels */
+@font-face{
+  font-family: "DM Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/dm-mono-latin-400-normal.woff2) format("woff2");
+}
+@font-face{
+  font-family: "DM Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../assets/fonts/dm-mono-latin-500-normal.woff2) format("woff2");
+}
