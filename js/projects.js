@@ -12,6 +12,8 @@
    3. Point `cover` at your best photo and list the rest in `media`.
 
    FIELDS
+     hidden    true = keep the entry but do not show it on the site
+     hidden    true = keep the entry but do not show it on the site
      slug      url-safe id (shows up as  #work/<slug>)
      title     big name
      tagline   one punchy line shown on the card
@@ -34,8 +36,35 @@
    ============================================================ */
 window.SBG_PROJECTS = [
   {
+    slug: "abuja-homeware-solutions",
+    title: "Abuja Homeware Solutions",
+    tagline: "A kitchen-gadget demo on a busy Abuja street, with the crowd doing the selling.",
+    client: "Abuja Homeware Solutions (AHS)",
+    location: "Abuja",
+    year: "2026",
+    services: ["Market Activations", "Brand Promotions", "Event Staffing"],
+    cover: "assets/projects/ahs/3.jpg",
+    accent: "gold",
+    brief: "AHS is an Abuja homeware store built on one promise: there's a solution to every household problem. Blenders, choppers, cookware and cleaning tools are easier to trust once you've seen them work, and a product page can't do that on its own.",
+    play: "We took the shelf to the street. Branded tents and a \"one-stop shop for all household items\" backdrop on a busy Abuja road, live blender and juicer demos at the table, a hosted mic to draw the crowd in, and trained brand reps handing out flyers and talking to passers-by. Shoppers could watch the products run, ask questions on the spot and walk away with an offer.",
+    measure: "Footfall to demo, conversations held, flyers and offers handed out, and customers who came back to the store or the online shop, reported once the campaign closes.",
+    deliverables: ["Activation concept & booth setup", "Live product demonstrations", "Hosted crowd engagement", "Trained brand reps & flyer distribution", "Photo coverage of the activation"],
+    media: [
+      { type: "image", src: "assets/projects/ahs/1.jpg", alt: "AHS tents set up along an Abuja street", span: "wide" },
+      { type: "image", src: "assets/projects/ahs/2.jpg", alt: "Brand reps working the crowd at the AHS stand" },
+      { type: "image", src: "assets/projects/ahs/4.jpg", alt: "Live blender demo at the AHS table" },
+      { type: "image", src: "assets/projects/ahs/5.jpg", alt: "Host with a mic during the product demo" },
+      { type: "image", src: "assets/projects/ahs/6.jpg", alt: "Rep presenting a blender jar to a passer-by" },
+      { type: "image", src: "assets/projects/ahs/7.jpg", alt: "Brand rep talking to a shopper" },
+      { type: "image", src: "assets/projects/ahs/8.jpg", alt: "Customer collecting an AHS offer" },
+      { type: "image", src: "assets/projects/ahs/9.jpg", alt: "Customer with an AHS rep in front of the cookware backdrop" },
+      { type: "image", src: "assets/projects/ahs/10.jpg", alt: "Visitor receiving an AHS flyer" }
+    ]
+  },
+  {
     slug: "campus-sampling-tour",
     sample: true,
+    hidden: true,
     title: "Campus Sampling Tour",
     tagline: "Free samples are easy. Making students stop, talk and remember isn't.",
     client: "Your brand here",
@@ -52,6 +81,7 @@ window.SBG_PROJECTS = [
   {
     slug: "market-women-loyalty-drive",
     sample: true,
+    hidden: true,
     title: "Market Women Loyalty Drive",
     tagline: "The best sales team is the one that already sells in the market.",
     client: "Your brand here",
@@ -68,6 +98,7 @@ window.SBG_PROJECTS = [
   {
     slug: "mall-pop-up-takeover",
     sample: true,
+    hidden: true,
     title: "Mall Pop-Up Takeover",
     tagline: "A weekend where the whole floor knows your name.",
     client: "Your brand here",
@@ -84,6 +115,7 @@ window.SBG_PROJECTS = [
   {
     slug: "follow-back",
     sample: true,
+    hidden: true,
     title: "Follow-Back",
     tagline: "A bigger number is easy. An audience that shows up is the job.",
     client: "Your brand here",
@@ -100,6 +132,7 @@ window.SBG_PROJECTS = [
   {
     slug: "launch-day-street-team",
     sample: true,
+    hidden: true,
     title: "Launch Day Street Team",
     tagline: "Fifty trained faces. One brand. Every corner covered.",
     client: "Your brand here",
@@ -116,6 +149,7 @@ window.SBG_PROJECTS = [
   {
     slug: "ground-truth-market-insight",
     sample: true,
+    hidden: true,
     title: "Ground Truth",
     tagline: "Know the market before you spend a naira on it.",
     client: "Your brand here",

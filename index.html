@@ -2,521 +2,471 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SBG Concept Ltd — Ideas. Visibility. Results.</title>
-<meta name="description" content="SBG Concept Ltd is an Abuja-based brand activation company. We turn strategy into market activations, promotions and engagement campaigns that turn attention into customers.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>SBG Concept Ltd — Brand activation, on the ground in Nigeria</title>
+<meta name="description" content="SBG Concept is an Abuja-based brand activation company. Market activations, promotions and engagement campaigns that turn attention into customers.">
+<meta name="theme-color" content="#07142E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SBG Concept Ltd">
+<meta property="og:title" content="SBG Concept — Ideas. Visibility. Results.">
+<meta property="og:description" content="Brand activation on the ground in Abuja and across Nigeria. Your brand deserves more than a scroll-past.">
+<link rel="canonical" href="https://www.sbgconcept.ng/">
+<meta property="og:url" content="https://www.sbgconcept.ng/">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"SBG Concept Ltd","url":"https://www.sbgconcept.ng","email":"info@sbgconcept.ng","telephone":"+2347065597039","address":{"@type":"PostalAddress","addressLocality":"Abuja","addressCountry":"NG"},"sameAs":["https://www.instagram.com/sbgconcept/"]}
+</script>
 
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
-<link rel="stylesheet" href="css/fonts.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="preload" href="assets/fonts/anybody-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css?v=6">
+<link rel="stylesheet" href="css/style.css?v=6">
+<script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 
-<div class="noise-overlay" aria-hidden="true"></div>
-<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-label" id="cursorLabel"></span></div>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ============ NAV ============ -->
-<header class="site-header" id="siteHeader">
-  <div class="wrap header-inner">
-    <a href="#home" class="brand" aria-label="SBG Concept home">
-      <span class="brand-mark">SBG<svg class="brand-arrow" width="18" height="14" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 12C6 9 10 3 17 1M17 1L11 1.5M17 1L14.5 6.5" stroke="#F2A900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <span class="brand-sub">CONCEPT</span>
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader" data-theme="dark">
+  <div class="header-inner">
+    <a href="#home" class="brand" aria-label="SBG Concept — home">
+      <span class="brand-sbg">SBG</span>
+      <svg class="brand-arrow" width="22" height="16" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 12C6 9 10 3 17 1M17 1L11 1.5M17 1L14.5 6.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="brand-concept">Concept</span>
     </a>
 
-    <nav class="main-nav" id="mainNav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#process">How We Work</a>
-      <a href="#why">Why Us</a>
-      <a href="#contact">Contact</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#about" data-label="About"><span>About</span></a>
+      <a href="#work" data-label="Work"><span>Work</span></a>
+      <a href="#services" data-label="Services"><span>Services</span></a>
+      <a href="#process" data-label="Process"><span>Process</span></a>
+      <a href="#feed" data-label="Instagram"><span>Instagram</span></a>
     </nav>
 
-    <a href="#contact" class="btn btn-small btn-primary header-cta">Start a Campaign</a>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-right">
+      <span class="clock mono" aria-hidden="true"><i class="live-dot"></i><span id="clock">ABUJA</span></span>
+      <a href="#contact" class="btn btn-solid btn-sm header-cta" data-cursor="Let's talk">Start a campaign</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu-nav" aria-label="Mobile">
+    <a href="#about"><span class="mono">01</span>About</a>
+    <a href="#work"><span class="mono">02</span>Work</a>
+    <a href="#services"><span class="mono">03</span>Services</a>
+    <a href="#process"><span class="mono">04</span>Process</a>
+    <a href="#feed"><span class="mono">05</span>Instagram</a>
+    <a href="#contact"><span class="mono">06</span>Contact</a>
+  </nav>
+  <p class="menu-foot mono">info@sbgconcept.ng · 0706 559 7039</p>
+</div>
 
 <main id="main">
 
   <!-- ============ HERO ============ -->
-  <section class="hero" id="home">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="dot-grid"></div>
-      <div class="hero-blob blob-a"></div>
-      <div class="hero-blob blob-b"></div>
-    </div>
+  <section class="hero" id="home" data-theme="dark">
+    <canvas class="hero-field" id="heroField" aria-hidden="true"></canvas>
 
-    <div class="wrap hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow reveal">
-          <span class="eyebrow-dot"></span>
-          Brand Activation Agency — Abuja, Nigeria
-        </p>
+    <div class="hero-inner">
+      <p class="hero-kicker mono" data-hero="fade"><i class="live-dot"></i> Brand activation agency · Abuja, Nigeria</p>
 
-        <h1 class="hero-title reveal">
-          Your brand deserves<br>
-          more than a <span class="strike"><span class="strike-text">scroll-past</span></span>.
-          <span class="hero-title-accent">We make sure it doesn't get one.</span>
-        </h1>
+      <h1 class="hero-title" id="heroTitle" aria-label="Your brand deserves more than a scroll-past. We make sure it doesn't get one.">
+        <span class="hl hl-small" data-split><span class="hl-text">Your brand deserves</span></span>
+        <span class="hl hl-small" data-split><span class="hl-text">more than a</span></span>
+        <span class="hl hl-huge" data-split><span class="hl-text strike">scroll-past.</span></span>
+      </h1>
 
-        <p class="hero-sub reveal">
-          SBG Concept is a full-service brand activation company. We get you out of the
-          feed and into real rooms, real markets and real conversations across Nigeria —
-          then turn that attention into customers who stick around.
-        </p>
-
-        <div class="hero-cta reveal">
-          <a href="#contact" class="btn btn-primary btn-magnetic">Start a Campaign</a>
-          <a href="#services" class="btn btn-ghost">
-            See what we do
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+      <div class="hero-foot" data-hero="fade">
+        <p class="hero-sub">We make sure it doesn't get one. SBG Concept gets you out of the feed and into real rooms, real markets and real conversations across Nigeria — then turns that attention into customers who stick around.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-gold btn-lg" data-cursor="Let's talk">Start a campaign <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="#work" class="btn btn-line btn-lg" data-cursor="Scroll">See the work</a>
         </div>
-
-        <ul class="hero-facts reveal">
-          <li>9 service lines</li>
-          <li>Abuja-based, Nigeria-wide</li>
-          <li>On ground. On point. On results.</li>
-        </ul>
-      </div>
-
-      <div class="hero-visual reveal" id="heroVisual" aria-hidden="true">
-        <div class="hv-stage">
-          <span class="hv-ring r1"></span>
-          <span class="hv-ring r2"></span>
-          <span class="hv-ring r3"></span>
-
-          <svg class="hv-megaphone" viewBox="0 0 120 120" fill="none">
-            <path class="hv-mega-body" d="M30 52v16a4 4 0 004 4h6l24 16V32L40 48h-6a4 4 0 00-4 4z" fill="#071A3D"/>
-            <path class="hv-wave hv-wave1" d="M70 44c5 4 5 24 0 32" stroke="#F2A900" stroke-width="4" stroke-linecap="round"/>
-            <path class="hv-wave hv-wave2" d="M80 36c9 8 9 40 0 48" stroke="#F2A900" stroke-width="4" stroke-linecap="round" opacity=".55"/>
-            <circle class="hv-mega-dot" cx="26" cy="60" r="3.5" fill="#F2A900"/>
-          </svg>
-
-          <svg class="hv-spark spark-a" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z" fill="#FFC107"/></svg>
-          <svg class="hv-spark spark-b" viewBox="0 0 24 24" fill="none"><path d="M4 18l6-7 4 4 6-9" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-
-          <span class="hv-particle p1"></span>
-          <span class="hv-particle p2"></span>
-          <span class="hv-particle p3"></span>
-          <span class="hv-particle p4"></span>
-          <span class="hv-particle p5"></span>
-        </div>
-
-        <div class="hv-badge badge-1">
-          <span class="hv-badge-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="14" cy="7" r="3.2" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M3 20c0-3.6 2.7-6 6-6M11 20c0-4.4 3.2-7.5 7.2-7.5S25 15.6 25 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-          <span>Customer Engagement</span>
-        </div>
-
-        <div class="hv-badge badge-2">
-          <span class="hv-badge-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M11 20V6M18 20v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
-          <span>Market Activations</span>
-        </div>
-
-        <div class="hv-badge badge-3">
-          <span class="hv-badge-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-          <span>Lead Generation</span>
-        </div>
-
-        <div class="hv-tag">Ideas. Visibility. Results.</div>
       </div>
     </div>
 
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Brand Promotions</span><span class="dot">◆</span>
-        <span>Market Activations</span><span class="dot">◆</span>
-        <span>Customer Engagement</span><span class="dot">◆</span>
-        <span>Lead Generation</span><span class="dot">◆</span>
-        <span>Market Insight</span><span class="dot">◆</span>
-        <span>Loyalty Programs</span><span class="dot">◆</span>
-        <span>Event Staffing</span><span class="dot">◆</span>
-        <span>Business Development</span><span class="dot">◆</span>
-        <span>Social Growth</span><span class="dot">◆</span>
-        <span>Brand Promotions</span><span class="dot">◆</span>
-        <span>Market Activations</span><span class="dot">◆</span>
-        <span>Customer Engagement</span><span class="dot">◆</span>
-        <span>Lead Generation</span><span class="dot">◆</span>
-        <span>Market Insight</span><span class="dot">◆</span>
-        <span>Loyalty Programs</span><span class="dot">◆</span>
-        <span>Event Staffing</span><span class="dot">◆</span>
-        <span>Business Development</span><span class="dot">◆</span>
-        <span>Social Growth</span><span class="dot">◆</span>
+    <div class="stamp" id="stamp" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <defs><path id="stampPath" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+        <circle cx="100" cy="100" r="98" fill="#FFB400"/>
+        <circle cx="100" cy="100" r="58" fill="none" stroke="#07142E" stroke-width="1.5" stroke-dasharray="2 5"/>
+        <g class="stamp-ring"><text><textPath href="#stampPath" startOffset="0">On ground ✺ On point ✺ On results ✺ On ground ✺ On point ✺ On results ✺</textPath></text></g>
+        <path d="M70 118 C 88 106, 106 82, 132 72 M132 72 L112 73 M132 72 L124 90" stroke="#07142E" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="hero-meta mono" data-hero="fade">
+      <span>9 service lines</span>
+      <span>Abuja-based · Nigeria-wide</span>
+      <span class="scroll-cue"><i></i> Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============ TAPES ============ -->
+  <div class="tapes" aria-hidden="true">
+    <div class="tape tape-a"><div class="tape-track" data-dir="-1">
+      <span>Brand Promotions</span><b>✺</b><span>Market Activations</span><b>✺</b><span>Customer Engagement</span><b>✺</b><span>Lead Generation</span><b>✺</b><span>Market Insight</span><b>✺</b><span>Loyalty Programs</span><b>✺</b><span>Event Staffing</span><b>✺</b><span>Business Development</span><b>✺</b><span>Social Growth</span><b>✺</b>
+    </div></div>
+    <div class="tape tape-b"><div class="tape-track" data-dir="1">
+      <span>Ideas</span><b>→</b><span>Visibility</span><b>→</b><span>Results</span><b>→</b><span>On ground</span><b>→</b><span>On point</span><b>→</b><span>On results</span><b>→</b><span>Ideas</span><b>→</b><span>Visibility</span><b>→</b><span>Results</span><b>→</b>
+    </div></div>
+  </div>
+
+  <!-- ============ ABOUT / MANIFESTO ============ -->
+  <section class="manifesto" id="about" data-theme="light">
+    <div class="wrap">
+      <p class="label mono"><span>(01)</span> About us</p>
+      <p class="manifesto-text" id="manifestoText">
+        Ideas are cheap. <mark>Execution on the ground is not.</mark> SBG Concept is a Nigerian business solutions company built for brands that want to be <mark>felt, not just seen.</mark> We plan the strategy — then we show up in markets, on campuses and at events, and turn foot traffic into paying customers. No recycled playbooks. No agency jargon. Just people talking to people.
+      </p>
+
+      <div class="mv">
+        <div class="mv-item" data-reveal>
+          <p class="mono mv-tag">Mission</p>
+          <p>To provide innovative marketing, promotional and business support solutions that help brands increase visibility, attract customers, and achieve sustainable growth through strategic engagement and exceptional service.</p>
+        </div>
+        <div class="mv-item" data-reveal>
+          <p class="mono mv-tag">Vision</p>
+          <p>To become a leading Nigerian business solutions company, recognised for transforming ideas into impactful brands, profitable opportunities, and memorable customer experiences.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="divider divider-flip" aria-hidden="true">
-    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,32 C240,90 480,0 720,24 C960,48 1200,90 1440,40 L1440,90 L0,90 Z"></path></svg>
-  </div>
+  <!-- ============ WORK ============ -->
+  <section class="work" id="work" data-theme="dark">
+    <div class="wrap work-head">
+      <div>
+        <p class="label mono"><span>(02)</span> Selected work</p>
+        <h2 class="display" data-split-words>The work, on the&nbsp;ground.</h2>
+      </div>
+      <p class="work-note" id="workNote">Drag, scroll, open anything.</p>
+    </div>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="section about" id="about">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="about-label">
-          <span class="section-index">01</span>
-          <span class="section-kicker">About&nbsp;Us</span>
-        </div>
-        <h2 class="section-title">
-          Ideas are cheap.<br>
-          Execution on the ground <em>is not.</em>
-        </h2>
-        <p class="lead-text">
-          SBG Concept Ltd is a Nigerian business solutions company built for brands
-          that want to be felt, not just seen. We plan the strategy, then
-          we show up — market activations, promotions and engagement campaigns that
-          turn foot traffic into paying customers.
-        </p>
-        <p class="body-text">
-          No recycled playbooks. No agency jargon. Just people talking to people,
-          and brands walking away with growth they can actually measure.
-        </p>
+    <div class="work-pin" id="workPin">
+      <div class="work-viewport" id="workViewport">
+        <div class="work-track" id="workTrack"></div>
+      </div>
+      <div class="wrap work-foot">
+        <div class="work-bar" aria-hidden="true"><i id="workBar"></i></div>
+        <p class="mono work-count"><span id="workIdx">01</span> / <span id="workTotal">06</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services" data-theme="light">
+    <div class="wrap services-grid">
+      <div class="services-intro">
+        <p class="label mono"><span>(03)</span> What we do</p>
+        <h2 class="display">Nine ways to get in front of people who'll actually&nbsp;buy.</h2>
+        <p class="services-hint mono">↘ Tap a line to open it</p>
       </div>
 
-      <div class="mv-cards">
-        <div class="mv-card mv-card--dark">
-          <span class="mv-tag">What we do</span>
-          <h3>Mission</h3>
-          <p>To provide innovative marketing, promotional and business support
-            solutions that help brands increase visibility, attract customers,
-            and achieve sustainable growth through strategic engagement and
-            exceptional service.</p>
+      <ul class="svc-list" id="svcList">
+        <li class="svc is-open">
+          <h3><button class="svc-btn" aria-expanded="true" aria-controls="svc-1" id="svc-b1">
+            <span class="svc-n mono">01</span><span class="svc-name">Brand Promotions</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-1" role="region" aria-labelledby="svc-b1"><div class="svc-inner">
+            <p>Get your brand out of the boardroom and into the conversation people are already having.</p>
+            <p class="mono svc-fmt">Roadshows · street teams · branded giveaways</p>
+          </div></div>
+        </li>
+        <li class="svc">
+          <h3><button class="svc-btn" aria-expanded="false" aria-controls="svc-2" id="svc-b2">
+            <span class="svc-n mono">02</span><span class="svc-name">Market Activations</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-2" role="region" aria-labelledby="svc-b2"><div class="svc-inner">
+            <p>Pop-up experiences that turn passers-by into customers, on the spot.</p>
+            <p class="mono svc-fmt">Pop-ups · sampling · market-day takeovers</p>
+          </div></div>
+        </li>
+        <li class="svc">
+          <h3><button class="svc-btn" aria-expanded="false" aria-controls="svc-3" id="svc-b3">
+            <span class="svc-n mono">03</span><span class="svc-name">Customer Engagement</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-3" role="region" aria-labelledby="svc-b3"><div class="svc-inner">
+            <p>Real conversations that build real loyalty — not another chatbot script.</p>
+            <p class="mono svc-fmt">Face-to-face · community · follow-up</p>
+          </div></div>
+        </li>
+        <li class="svc">
+          <h3><button class="svc-btn" aria-expanded="false" aria-controls="svc-4" id="svc-b4">
+            <span class="svc-n mono">04</span><span class="svc-name">Lead Generation</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-4" role="region" aria-labelledby="svc-b4"><div class="svc-inner">
+            <p>Qualified interest, not just noise and numbers on a spreadsheet.</p>
+            <p class="mono svc-fmt">Capture · qualify · hand over</p>
+          </div></div>
+        </li>
+        <li class="svc">
+          <h3><button class="svc-btn" aria-expanded="false" aria-controls="svc-5" id="svc-b5">
+            <span class="svc-n mono">05</span><span class="svc-name">Market &amp; Business Insight</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-5" role="region" aria-labelledby="svc-b5"><div class="svc-inner">
+            <p>Transforming information into competitive advantage. Know the market, grow your business.</p>
+            <p class="mono svc-fmt">Field research · price audits · read-outs</p>
+          </div></div>
+        </li>
+        <li class="svc">
+          <h3><button class="svc-btn" aria-expanded="false" aria-controls="svc-6" id="svc-b6">
+            <span class="svc-n mono">06</span><span class="svc-name">Social Followership Campaigns</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-6" role="region" aria-labelledby="svc-b6"><div class="svc-inner">
+            <p>We grow an audience that actually shows up when you post — not just a bigger number.</p>
+            <p class="mono svc-fmt">On-ground → online · community · creators</p>
+          </div></div>
+        </li>
+        <li class="svc">
+          <h3><button class="svc-btn" aria-expanded="false" aria-controls="svc-7" id="svc-b7">
+            <span class="svc-n mono">07</span><span class="svc-name">Referral &amp; Loyalty Programs</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-7" role="region" aria-labelledby="svc-b7"><div class="svc-inner">
+            <p>Turn happy customers into your best, cheapest sales team.</p>
+            <p class="mono svc-fmt">Rewards · referrals · repeat-purchase loops</p>
+          </div></div>
+        </li>
+        <li class="svc">
+          <h3><button class="svc-btn" aria-expanded="false" aria-controls="svc-8" id="svc-b8">
+            <span class="svc-n mono">08</span><span class="svc-name">Event Support &amp; Staffing</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-8" role="region" aria-labelledby="svc-b8"><div class="svc-inner">
+            <p>Trained, professional faces for your brand — every time, not just on a good day.</p>
+            <p class="mono svc-fmt">Ambassadors · hosts · crowd management</p>
+          </div></div>
+        </li>
+        <li class="svc">
+          <h3><button class="svc-btn" aria-expanded="false" aria-controls="svc-9" id="svc-b9">
+            <span class="svc-n mono">09</span><span class="svc-name">Business Development Support</span><span class="svc-plus" aria-hidden="true"></span></button></h3>
+          <div class="svc-panel" id="svc-9" role="region" aria-labelledby="svc-b9"><div class="svc-inner">
+            <p>Strategic backup for whatever growth stage you're actually in right now.</p>
+            <p class="mono svc-fmt">Strategy · partnerships · go-to-market</p>
+          </div></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process" data-theme="dark">
+    <div class="process-pin" id="processPin">
+      <div class="wrap process-grid">
+        <div class="process-left">
+          <p class="label mono"><span>(04)</span> How we work</p>
+          <h2 class="display">Visibility that's built to turn into&nbsp;revenue.</h2>
+          <p class="process-lead">Our whole job, in one sentence: we turn visibility into customer acquisition, engagement into loyalty, and promotional activity into revenue that sticks around.</p>
+          <ol class="p-steps" id="pSteps">
+            <li class="is-active"><span class="mono">01</span> Visibility</li>
+            <li><span class="mono">02</span> Engagement</li>
+            <li><span class="mono">03</span> Results</li>
+          </ol>
         </div>
-        <div class="mv-card mv-card--outline">
-          <span class="mv-tag">Where we're headed</span>
-          <h3>Vision</h3>
-          <p>To become a leading Nigerian business solutions company, recognised
-            for transforming ideas into impactful brands, profitable
-            opportunities, and memorable customer experiences.</p>
+
+        <div class="process-stage" aria-live="off">
+          <div class="p-viz" aria-hidden="true">
+            <svg viewBox="0 0 400 400" fill="none">
+              <g class="pv pv-1">
+                <circle cx="200" cy="200" r="16" fill="#FFB400"/>
+                <circle class="pv-ring" cx="200" cy="200" r="50" stroke="#FFB400" stroke-width="3"/>
+                <circle class="pv-ring" cx="200" cy="200" r="90" stroke="#F3ECDC" stroke-width="2" stroke-dasharray="4 10"/>
+                <circle class="pv-ring" cx="200" cy="200" r="135" stroke="#FFB400" stroke-width="2"/>
+                <circle class="pv-ring" cx="200" cy="200" r="180" stroke="#F3ECDC" stroke-width="1.5" stroke-dasharray="2 12"/>
+              </g>
+              <g class="pv pv-2">
+                <g stroke="#F3ECDC" stroke-width="2"><path d="M110 270 L200 140 L300 250 L200 320 Z M110 270 L300 250 M200 140 L200 320"/></g>
+                <g fill="#FFB400"><circle cx="110" cy="270" r="16"/><circle cx="200" cy="140" r="22"/><circle cx="300" cy="250" r="16"/><circle cx="200" cy="320" r="12"/></g>
+                <circle class="pv-ring" cx="200" cy="140" r="40" stroke="#FFB400" stroke-width="2"/>
+              </g>
+              <g class="pv pv-3">
+                <g fill="#F3ECDC"><rect class="pv-bar" x="70" y="250" width="50" height="90" rx="4"/><rect class="pv-bar" x="140" y="210" width="50" height="130" rx="4"/><rect class="pv-bar" x="210" y="160" width="50" height="180" rx="4"/></g>
+                <rect class="pv-bar" x="280" y="90" width="50" height="250" rx="4" fill="#FFB400"/>
+                <path d="M60 150 C140 140 200 100 330 50 M330 50 L296 54 M330 50 L318 82" stroke="#FFB400" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="p-words" id="pWords">
+            <p class="p-word is-active" data-i="0"><span class="p-title">Visibility</span><span class="p-copy">We get your brand seen where your customers already are — markets, streets, campuses, timelines.</span></p>
+            <p class="p-word" data-i="1"><span class="p-title">Engagement</span><span class="p-copy">We turn that attention into real conversation, and real conversation into loyalty.</span></p>
+            <p class="p-word" data-i="2"><span class="p-title">Results</span><span class="p-copy">We convert loyalty into repeat customers — and hand you the numbers to prove it.</span></p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ VALUES ============ -->
-  <section class="section values" id="values">
+  <section class="values" id="values" data-theme="light">
     <div class="wrap">
-      <div class="section-head">
-        <div class="about-label">
-          <span class="section-index">02</span>
-          <span class="section-kicker">What We Stand On</span>
+      <div class="values-head">
+        <div>
+          <p class="label mono"><span>(05)</span> What we stand on</p>
+          <h2 class="display">Six things we don't&nbsp;compromise&nbsp;on.</h2>
         </div>
-        <h2 class="section-title">Six things we don't compromise on.</h2>
+        <p class="drag-hint mono" id="dragHint">↯ Go on — move them around</p>
       </div>
-
-      <div class="values-grid">
-        <article class="value-card">
-          <span class="value-num">01</span>
-          <h3>Integrity</h3>
-          <p>We say what we do. We do what we say.</p>
-        </article>
-        <article class="value-card">
-          <span class="value-num">02</span>
-          <h3>Innovation</h3>
-          <p>Fresh ideas over recycled playbooks.</p>
-        </article>
-        <article class="value-card">
-          <span class="value-num">03</span>
-          <h3>Excellence</h3>
-          <p>If it's not sharp, it doesn't go out.</p>
-        </article>
-        <article class="value-card">
-          <span class="value-num">04</span>
-          <h3>Customer Focus</h3>
-          <p>Your growth is the whole brief.</p>
-        </article>
-        <article class="value-card">
-          <span class="value-num">05</span>
-          <h3>Results</h3>
-          <p>We measure the win, not the vibe.</p>
-        </article>
-        <article class="value-card">
-          <span class="value-num">06</span>
-          <h3>Professionalism</h3>
-          <p>Reliable people, every single time.</p>
-        </article>
-      </div>
+    </div>
+    <div class="wall" id="wall">
+      <article class="vcard v-circle" data-drag><span class="mono">01</span><h3>Integrity</h3><p>We say what we do. We do what we say.</p></article>
+      <article class="vcard v-rect" data-drag><span class="mono">02</span><h3>Innovation</h3><p>Fresh ideas over recycled playbooks.</p></article>
+      <article class="vcard v-burst" data-drag><span class="mono">03</span><h3>Excellence</h3><p>If it's not sharp, it doesn't go out.</p></article>
+      <article class="vcard v-tag" data-drag><span class="mono">04</span><h3>Customer Focus</h3><p>Your growth is the whole brief.</p></article>
+      <article class="vcard v-arch" data-drag><span class="mono">05</span><h3>Results</h3><p>We measure the win, not the vibe.</p></article>
+      <article class="vcard v-pill" data-drag><span class="mono">06</span><h3>Professionalism</h3><p>Reliable people, every single time.</p></article>
     </div>
   </section>
 
-  <div class="divider" aria-hidden="true">
-    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,0 480,90 720,48 C960,10 1200,60 1440,20 L1440,90 L0,90 Z"></path></svg>
-  </div>
+  <!-- ============ WHY ============ -->
+  <section class="why" id="why" data-theme="dark">
+    <div class="wrap why-grid">
+      <div class="why-intro">
+        <p class="label mono"><span>(06)</span> Why us</p>
+        <h2 class="display">Why brands stick with us.<br><span class="why-sub">The honest version.</span></h2>
+      </div>
 
-  <!-- ============ SERVICES ============ -->
-  <section class="section services" id="services">
-    <div class="wrap">
-      <div class="section-head section-head--light">
-        <div class="about-label">
-          <span class="section-index">03</span>
-          <span class="section-kicker">What We Do</span>
+      <div class="ticket" id="ticket">
+        <div class="ticket-main">
+          <ul class="ticket-list">
+            <li>We've done the fieldwork — real markets, real crowds, real feedback.</li>
+            <li>Every rep is trained and briefed before they ever touch your brand.</li>
+            <li>No cookie-cutter decks — your strategy is built for your business.</li>
+            <li>We track reach, conversion and ROI. Not vanity numbers.</li>
+            <li>We know the Nigerian market because we work in it, every day.</li>
+            <li>Startup budget or enterprise scale — the approach flexes to fit.</li>
+          </ul>
         </div>
-        <h2 class="section-title">Nine ways we get your brand in front of people who'll actually buy.</h2>
-      </div>
-
-      <div class="bento">
-        <article class="bento-card bento-card--wide">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><path d="M6 17v6a2 2 0 002 2h3l9 6V9l-9 6H8a2 2 0 00-2 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M25 15c2 1.5 2 8.5 0 10M30 11c4 3.5 4 15.5 0 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Brand Promotions</h3>
-          <p>Get your brand out of the boardroom and into the conversation people are already having.</p>
-        </article>
-
-        <article class="bento-card">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><path d="M6 18l3-10h22l3 10M6 18v14a2 2 0 002 2h4V24h16v10h4a2 2 0 002-2V18M6 18h28" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Market Activations</h3>
-          <p>Pop-up experiences that turn passers-by into customers, on the spot.</p>
-        </article>
-
-        <article class="bento-card">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><circle cx="14" cy="14" r="5" stroke="currentColor" stroke-width="2"/><circle cx="27" cy="16" r="4" stroke="currentColor" stroke-width="2"/><path d="M5 33c0-6 4-10 9-10s9 4 9 10M23 33c0-4.5 2.7-8 6.5-8s6.5 3.5 6.5 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Customer Engagement</h3>
-          <p>Real conversations that build real loyalty — not another chatbot script.</p>
-        </article>
-
-        <article class="bento-card">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><circle cx="15" cy="16" r="6" stroke="currentColor" stroke-width="2"/><path d="M5 34c0-6.5 4.5-11 10-11s10 4.5 10 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M28 12v10M23 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Lead Generation</h3>
-          <p>Qualified interest, not just noise and numbers on a spreadsheet.</p>
-        </article>
-
-        <article class="bento-card">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><circle cx="17" cy="17" r="11" stroke="currentColor" stroke-width="2"/><path d="M25.5 25.5L35 35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 19v-4M17 19v-8M22 19v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Market &amp; Business Insight</h3>
-          <p>Transforming information into competitive advantage. Know the market, grow your business.</p>
-        </article>
-
-        <article class="bento-card bento-card--wide">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="8" width="28" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 13h28M12 33h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Social Followership Campaigns</h3>
-          <p>We grow an audience that actually shows up when you post — not just a bigger number.</p>
-        </article>
-
-        <article class="bento-card">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><path d="M20 6l3.5 8 8.5.8-6.4 5.8 1.9 8.4L20 24.7l-7.5 4.3 1.9-8.4L8 14.8l8.5-.8L20 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Referral &amp; Loyalty Programs</h3>
-          <p>Turn happy customers into your best, cheapest sales team.</p>
-        </article>
-
-        <article class="bento-card">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><path d="M16 6v4M24 6v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="10" y="10" width="20" height="24" rx="3" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="19" r="3.5" stroke="currentColor" stroke-width="2"/><path d="M13.5 29.5c1.2-3 3.7-4.2 6.5-4.2s5.3 1.2 6.5 4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Event Support &amp; Staffing</h3>
-          <p>Trained, professional faces for your brand — every time, not just on a good day.</p>
-        </article>
-
-        <article class="bento-card bento-card--wide">
-          <div class="bento-icon">
-            <svg viewBox="0 0 40 40" fill="none"><path d="M6 32V16M16 32V9M26 32v-9M34 32V19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Business Development Support</h3>
-          <p>Strategic backup for whatever growth stage you're actually in right now.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROCESS ============ -->
-  <section class="section process" id="process">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="about-label">
-          <span class="section-index">04</span>
-          <span class="section-kicker">How We Work</span>
-        </div>
-        <h2 class="section-title">Visibility that's built to turn into revenue.</h2>
-        <p class="lead-text process-lead">
-          Our whole job, in one sentence: we turn visibility into customer
-          acquisition, engagement into loyalty, and promotional activity into
-          revenue that sticks around.
-        </p>
-      </div>
-
-      <ol class="steps">
-        <li class="step">
-          <span class="step-num">01</span>
-          <h3>Visibility</h3>
-          <p>We get your brand seen where your customers already are — markets, streets, campuses, timelines.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">02</span>
-          <h3>Engagement</h3>
-          <p>We turn that attention into real conversation, and real conversation into loyalty.</p>
-        </li>
-        <li class="step">
-          <span class="step-num">03</span>
-          <h3>Results</h3>
-          <p>We convert loyalty into repeat customers — and hand you the numbers to prove it.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <div class="divider divider-flip" aria-hidden="true">
-    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,32 C240,90 480,0 720,24 C960,48 1200,90 1440,40 L1440,90 L0,90 Z"></path></svg>
-  </div>
-
-  <!-- ============ WHY US ============ -->
-  <section class="section why" id="why">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="about-label">
-          <span class="section-index">05</span>
-          <span class="section-kicker">Why Us</span>
-        </div>
-        <h2 class="section-title">Why brands stick with us <span class="serif-accent">(the honest version)</span></h2>
-      </div>
-
-      <div class="ticket">
-        <div class="ticket-notch ticket-notch--left" aria-hidden="true"></div>
-        <div class="ticket-notch ticket-notch--right" aria-hidden="true"></div>
-        <ul class="ticket-list">
-          <li>We've done the fieldwork — real markets, real crowds, real feedback.</li>
-          <li>Every rep is trained and briefed before they ever touch your brand.</li>
-          <li>No cookie-cutter decks — your strategy is built for your business.</li>
-          <li>We track reach, conversion and ROI. Not vanity numbers.</li>
-          <li>We know the Nigerian market because we work in it, every day.</li>
-          <li>Startup budget or enterprise scale — the approach flexes to fit.</li>
-        </ul>
-        <div class="ticket-stub">
-          <span>SBG CONCEPT LTD</span>
-          <span>ADMIT&nbsp;ONE&nbsp;BRAND</span>
+        <div class="ticket-stub" aria-hidden="true">
+          <span class="mono">Admit one brand</span>
+          <i class="barcode"></i>
+          <span class="mono">SBG Concept Ltd</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CTA BANNER ============ -->
-  <section class="cta-banner">
-    <div class="wrap cta-banner-inner">
-      <h2>Let's grow your brand,<br>together.</h2>
-      <a href="#contact" class="btn btn-dark">Send us a brief
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="feed" id="feed" data-theme="light">
+    <div class="wrap">
+      <div class="feed-head">
+        <div>
+          <p class="label mono"><span>(07)</span> On the feed</p>
+          <h2 class="display feed-handle" data-split-words>@sbgconcept</h2>
+        </div>
+        <a class="btn btn-solid btn-lg" id="feedFollow" href="https://www.instagram.com/sbgconcept/" target="_blank" rel="noopener" data-cursor="Follow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+      <div class="feed-grid" id="feedGrid" data-state="loading" aria-live="polite"></div>
     </div>
   </section>
 
   <!-- ============ CONTACT ============ -->
-  <section class="section contact" id="contact">
+  <section class="contact" id="contact" data-theme="gold">
     <div class="wrap contact-grid">
       <div class="contact-intro">
-        <div class="about-label">
-          <span class="section-index">06</span>
-          <span class="section-kicker">Get In Touch</span>
-        </div>
-        <h2 class="section-title">Let's put your<br>brand to work.</h2>
-        <p class="lead-text">
-          Tell us what you're building. We'll tell you how to make Abuja —
-          and beyond — actually notice.
-        </p>
+        <p class="label mono"><span>(08)</span> Start a campaign</p>
+        <h2 class="display">Tell us what you're&nbsp;building.</h2>
+        <p class="contact-lead">Pick what you need, say hello, and we'll pick it up on WhatsApp or email. We'll tell you how to make Abuja — and beyond — actually notice.</p>
 
         <ul class="contact-list">
-          <li>
-            <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5c0-.6.4-1 1-1h3.2c.5 0 .9.3 1 .8l1 4a1 1 0 01-.3 1L7.5 11.3a13 13 0 006.2 6.2l1.5-2.4c.3-.4.7-.6 1.1-.4l4 1c.5.1.7.5.7 1V20c0 .6-.4 1-1 1h-1.5C10 21 3 14 3 6.5V5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
-            <div>
-              <a href="tel:+2347065597039">0706 559 7039</a>
-              <a href="tel:+2349070048606">0907 004 8606</a>
-              <span class="contact-note">Call / WhatsApp</span>
-            </div>
-          </li>
-          <li>
-            <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.1 7-12a7 7 0 10-14 0c0 5.9 7 12 7 12z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg></span>
-            <div>
-              <span>Abuja, Nigeria</span>
-              <span class="contact-note">Location</span>
-            </div>
-          </li>
-          <li>
-            <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
-            <div>
-              <a href="mailto:info@sbgconcept.ng">info@sbgconcept.ng</a>
-              <span class="contact-note">Email</span>
-            </div>
-          </li>
-          <li>
-            <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9S9.5 5.6 12 3z" stroke="currentColor" stroke-width="1.6"/></svg></span>
-            <div>
-              <a href="https://www.sbgconcept.ng" target="_blank" rel="noopener">www.sbgconcept.ng</a>
-              <span class="contact-note">Website</span>
-            </div>
-          </li>
+          <li><span class="mono">Call / WhatsApp</span><a href="tel:+2347065597039">0706 559 7039</a><a href="tel:+2349070048606">0907 004 8606</a></li>
+          <li><span class="mono">Email</span><a href="mailto:info@sbgconcept.ng">info@sbgconcept.ng</a></li>
+          <li><span class="mono">Base</span><a href="https://www.google.com/maps?q=Abuja,Nigeria" target="_blank" rel="noopener">Abuja, Nigeria ↗</a></li>
         </ul>
+      </div>
 
-        <div class="socials">
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M15 8.5h2V5h-2c-2.2 0-4 1.8-4 4v2H9v3.5h2V21h3.5v-6.5H17l.5-3.5h-3V9c0-.6.4-1 1.5-1z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 10.5v6M8 7.8v.1M12 16.5v-3.5c0-1.4 1-2.5 2.4-2.5s2.1 1 2.1 2.5v3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+      <form class="brief" id="brief" novalidate>
+        <fieldset>
+          <legend class="mono">1 · What do you need?</legend>
+          <div class="chips" id="needChips"></div>
+        </fieldset>
+        <fieldset>
+          <legend class="mono">2 · Where are you at?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="scale" value="a startup"><span>Startup</span></label>
+            <label class="chip"><input type="radio" name="scale" value="a growing business"><span>Growing</span></label>
+            <label class="chip"><input type="radio" name="scale" value="an enterprise"><span>Enterprise</span></label>
+            <label class="chip"><input type="radio" name="scale" value="still working out our scale"><span>Not sure yet</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="mono">3 · Say hello</legend>
+          <div class="fields">
+            <label class="field"><span class="mono">Your name</span><input type="text" name="name" autocomplete="name" required></label>
+            <label class="field"><span class="mono">Brand / company</span><input type="text" name="brand" autocomplete="organization"></label>
+            <label class="field field-wide"><span class="mono">Anything we should know?</span><textarea name="note" rows="2"></textarea></label>
+          </div>
+        </fieldset>
+
+        <div class="bubble" aria-live="polite"><p class="mono bubble-label">Preview of your message</p><p id="bubbleText"></p></div>
+        <p class="form-error mono" id="formError" role="alert"></p>
+
+        <div class="brief-actions">
+          <button type="button" class="btn btn-solid btn-lg" id="sendWa" data-cursor="Send">
+            Send on WhatsApp <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="button" class="btn btn-line-dark btn-lg" id="sendMail">Send by email</button>
         </div>
-      </div>
-
-      <div class="contact-map">
-        <iframe
-          title="Abuja, Nigeria map"
-          src="https://www.google.com/maps?q=Abuja,Nigeria&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      </form>
     </div>
   </section>
 
 </main>
 
+<!-- ============ PROJECT DIALOG ============ -->
+<dialog class="case" id="case" aria-labelledby="caseTitle">
+  <div class="case-scroll" id="caseScroll">
+    <button class="case-close" id="caseClose" aria-label="Close project" data-cursor="Close"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <div id="caseBody"></div>
+  </div>
+  <div class="lightbox" id="lightbox" aria-hidden="true"></div>
+</dialog>
+
 <!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="footer-brand">
-      <span class="brand-mark">SBG<svg class="brand-arrow" width="16" height="12" viewBox="0 0 18 14" fill="none" aria-hidden="true"><path d="M1 12C6 9 10 3 17 1M17 1L11 1.5M17 1L14.5 6.5" stroke="#F2A900" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <p>Ideas. Visibility. Results.</p>
+<footer class="site-footer" data-theme="dark">
+  <div class="wrap">
+    <div class="footer-top">
+      <p class="footer-line">Ideas. Visibility. Results.</p>
+      <a href="#home" class="to-top mono" id="toTop">Back to top ↑</a>
     </div>
-
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#process">How We Work</a>
-      <a href="#why">Why Us</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <nav class="footer-legal" aria-label="Legal">
-      <a href="terms-of-service.html">Terms of Service</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="refund-cancellation-policy.html">Refund &amp; Cancellation</a>
-      <a href="cookie-policy.html">Cookie Policy</a>
-      <a href="service-level-agreement.html">Service Level Agreement</a>
-    </nav>
-
-    <div class="footer-meta">
-      <p class="footer-tag">On ground. On point. On results.</p>
-      <p class="footer-copy">&copy; <span id="year"></span> SBG Concept Ltd. All rights reserved.</p>
+    <div class="footer-cols">
+      <nav aria-label="Footer"><p class="mono">Site</p>
+        <a href="#about">About</a><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#feed">Instagram</a><a href="#contact">Contact</a>
+      </nav>
+      <nav aria-label="Legal"><p class="mono">Legal</p>
+        <a href="terms-of-service.html">Terms of Service</a><a href="privacy-policy.html">Privacy Policy</a><a href="refund-cancellation-policy.html">Refund &amp; Cancellation</a><a href="cookie-policy.html">Cookie Policy</a><a href="service-level-agreement.html">Service Level Agreement</a>
+      </nav>
+      <div><p class="mono">Say hi</p>
+        <a href="mailto:info@sbgconcept.ng">info@sbgconcept.ng</a><a href="tel:+2347065597039">0706 559 7039</a><a href="https://www.instagram.com/sbgconcept/" target="_blank" rel="noopener">Instagram ↗</a>
+      </div>
+    </div>
+    <div class="wordmark" id="wordmark" aria-hidden="true">SBG CONCEPT</div>
+    <div class="footer-meta mono">
+      <span>On ground. On point. On results.</span>
+      <span>&copy; <span id="year"></span> SBG Concept Ltd. All rights reserved.</span>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/2347065597039" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 11-11.6-7.1L12 4a8 8 0 018 8z" stroke="currentColor" stroke-width="0"/><path d="M12 4a8 8 0 00-6.9 12l-1 4 4.1-1A8 8 0 1012 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 8.8c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.4.2.5.6 1.5.7 1.6.1.1.1.3 0 .5-.1.2-.2.3-.3.4-.2.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1 1.1.7 1.3.5.2-.2.5-.7.7-.9.2-.2.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.4.3 0 .2 0 .9-.3 1.3-.3.4-1.3.9-1.8.9-.5 0-1.5-.1-3-1.3-2.4-1.7-3.3-3.7-3.5-4.1-.1-.4-.6-1-.6-1.5 0-.5.3-.8.4-1z" fill="currentColor"/></svg>
+<a href="https://wa.me/2347065597039" class="wa-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-cursor="Chat">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M12 4a8 8 0 00-6.9 12l-1 4 4.1-1A8 8 0 1012 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 8.8c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.4.2.5.6 1.5.7 1.6.1.1.1.3 0 .5-.1.2-.2.3-.3.4-.2.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1 1.1.7 1.3.5.2-.2.5-.7.7-.9.2-.2.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.4.3 0 .2 0 .9-.3 1.3-.3.4-1.3.9-1.8.9-.5 0-1.5-.1-3-1.3-2.4-1.7-3.3-3.7-3.5-4.1-.1-.4-.6-1-.6-1.5 0-.5.3-.8.4-1z" fill="currentColor"/></svg>
 </a>
 
-<script src="js/main.js"></script>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/Draggable.min.js"></script>
+<script src="assets/vendor/InertiaPlugin.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="js/config.js?v=6"></script>
+<script src="js/projects.js?v=6"></script>
+<script src="js/art.js?v=6"></script>
+<script src="js/dotfield.js?v=6"></script>
+<script src="js/main.js?v=6"></script>
+<script src="js/feed.js?v=6"></script>
+<script src="js/home.js?v=6"></script>
 </body>
 </html>

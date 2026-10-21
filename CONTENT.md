@@ -35,7 +35,7 @@ Image tips: ~1600px on the long edge, JPG/WebP, under ~300 KB each. Videos: MP4 
 
 Every project gets its own link (`/#work/zest-campus-tour`) you can share.
 
-The six built-in projects are **samples** (they carry a "Sample" tag on the site). Replace or delete them as real work comes in.
+Besides AHS, the built-in projects are hidden samples (`hidden: true` in `js/projects.js`). Delete the flag to show one, or replace it with real work.
 
 ## 2. Turn on the live Instagram feed
 
